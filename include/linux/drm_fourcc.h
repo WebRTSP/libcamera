@@ -1673,6 +1673,7 @@ drm_fourcc_canonicalize_nvidia_format_mod(__u64 modifier)
 
 #define PISP_FORMAT_MOD_COMPRESS_MODE1 fourcc_mod_code(RPI, 1)
 #define PISP_FORMAT_MOD_COMPRESS_MODE2 fourcc_mod_code(RPI, 2)
+#define PISP_FORMAT_MOD_VERIFICATION fourcc_mod_code(RPI, 3)
 
 #if defined(__cplusplus)
 }
