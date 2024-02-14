@@ -76,6 +76,9 @@ protected:
 	/* Whether the stitch block (if available) needs to swap buffers. */
 	bool stitchSwapBuffers_;
 
+	bool monoSensor_;
+	bool lensPresent_;
+
 private:
 	/* Number of metadata objects available in the context list. */
 	static constexpr unsigned int numMetadataContexts = 16;
@@ -100,9 +103,6 @@ private:
 	void applyAGC(const struct AgcStatus *agcStatus, ControlList &ctrls);
 
 	std::map<unsigned int, MappedFrameBuffer> buffers_;
-
-	bool lensPresent_;
-	bool monoSensor_;
 
 	std::array<RPiController::Metadata, numMetadataContexts> rpiMetadata_;
 
