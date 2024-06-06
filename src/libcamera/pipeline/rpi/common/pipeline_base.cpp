@@ -492,8 +492,6 @@ PipelineHandlerBase::generateConfiguration(Camera *camera, Span<const StreamRole
 		config->addConfiguration(cfg);
 	}
 
-	config->validate();
-
 	return config;
 }
 
